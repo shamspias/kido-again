@@ -40,4 +40,16 @@ cat > "${BASE_PATH}/notes.md" <<EOL
 - What finally worked:
 EOL
 
+# Create test_cases.json
+cat > "${BASE_PATH}/test_cases.json" <<EOL
+{
+  "samples": [
+    {
+      "input": "TODO: sample input",
+      "output": "TODO: expected output"
+    }
+  ]
+}
+EOL
+
 echo "✅ Created new problem at: ${BASE_PATH}"
