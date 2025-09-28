@@ -22,12 +22,13 @@ Every problem lives in its own folder. Inside you’ll find:
 ```
 
 problems/<platform>/<id-or-name>/
-├── link.md      # the link to the problem
-├── notes.md     # short thoughts, mistakes, fixes
-├── python/      # solution in Python
-├── rust/        # solution in Rust
-├── cpp/         # solution in C++
-└── java/        # solution in Java
+├── link.md          # the link to the problem
+├── test_cases.json  # placeholder for sample inputs/outputs you can add for quick testing
+├── notes.md         # short thoughts, mistakes, fixes
+├── python/          # solution in Python
+├── rust/            # solution in Rust
+├── cpp/             # solution in C++
+└── java/            # solution in Java
 
 ```
 
@@ -38,6 +39,7 @@ Example:
 problems/leetcode/0001-two-sum/
 link.md
 notes.md
+test_cases.json
 python/solution.py
 rust/solution.rs
 
@@ -86,6 +88,7 @@ This creates:
 problems/leetcode/0001-two-sum/
     link.md
     notes.md
+    test_cases.json
     python/
     rust/
     cpp/
