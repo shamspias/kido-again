@@ -41,7 +41,7 @@ notes.md
 python/solution.py
 rust/solution.rs
 
-```
+````
 
 ---
 
@@ -54,26 +54,56 @@ rust/solution.rs
 ---
 
 ## 📝 Workflow
+
+### Option 1: Manual
 1. Pick a problem.  
 2. Make a folder: `problems/<platform>/<id-name>/`  
 3. Add `link.md` with the problem URL.  
 4. Add `notes.md` with my random thoughts / how I solved it / what went wrong.  
 5. Throw in solutions in whatever language I feel like.  
 6. Commit with a sarcastic message:  
+   ```bash
+   git commit -m "feat: solved two-sum after crying in rust"
+   ```
+
+### Option 2: With Script (Recommended)
+
+Use the helper script `new_problem.sh` to auto-generate the structure.
+
+```bash
+./new_problem.sh <platform> <id> <name-with-dashes> <url>
 ```
 
-git commit -m "feat: solved two-sum after crying in rust"
+Example:
+
+```bash
+./new_problem.sh leetcode 0001 two-sum https://leetcode.com/problems/two-sum/
+```
+
+This creates:
 
 ```
+problems/leetcode/0001-two-sum/
+    link.md
+    notes.md
+    python/
+    rust/
+    cpp/
+    java/
+```
+
+Then just add your code inside the language folders.
 
 ---
 
 ## 🤡 Why "Kido Again"?
-Because this is me acting like a coding kid again,  
-except with more coffee, less patience, and questionable life choices.  
+
+Because this is me acting like a coding kid again,
+except with more coffee, less patience, and questionable life choices.
 
 ---
 
 ## 📜 License
-Public domain of suffering.  
+
+Public domain of suffering.
 Use it to laugh at my code, or to feel better about yours.
