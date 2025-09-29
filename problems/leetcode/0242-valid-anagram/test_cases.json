@@ -1,0 +1,12 @@
+[
+  {
+    "s": "anagram",
+    "t": "nagaram",
+    "expected": true
+  },
+  {
+    "s": "rat",
+    "t": "car",
+    "expected": false
+  }
+]
